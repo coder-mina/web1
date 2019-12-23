@@ -1,18 +1,21 @@
 var Body = {
     setColor: function(color) {
-      document.querySelector('body').style.color = color;
+        $('body').css('color', color);
+        // document.querySelector('body').style.color = color;
     },
     setBackgroundColor: function(color) {
-      document.querySelector('body').style.backgroundColor = color;
+        $('body').css('backgroundColor', color);
+        // document.querySelector('body').style.backgroundColor = color;
     }
   }
   var Links = {
     setColor: function(color){
-      var links = document.querySelectorAll('a');
-      var i = 0;
-      while (i < links.length) {
-        links[i].style.color = color; i++;
-      }
+    //   var links = document.querySelectorAll('a');
+    //   var i = 0;
+    //   while (i < links.length) {
+    //     links[i].style.color = color; i++;
+    //   }
+        $('a').css('color', color); // 웹페이지의 모든 a 태그를 jQueyr로 제어하겠다.
     }
   }
   function nightDayHandler(self) {
